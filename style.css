@@ -1,0 +1,456 @@
+/* ----------------------- Wildcard / General ----------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+}
+
+/* ----------------------- Body ----------------------- */
+body {
+  background-image: url("assets/Background_final.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------------------- Header ----------------------- */
+/* ------------ General ------------ */
+header {
+  display: flex;
+}
+
+/* ------------ Desktop ------------ */
+#desktop_header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px 0 26px;
+  height: 97px;
+}
+
+#desktop_header nav {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+#desktop_header nav a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#desktop_header .logo {
+  width: 190px;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+/* ------------ Mobile ------------ */
+#mobile_header {
+  display: none;
+}
+
+#open_button {
+  width: 38px;
+  margin: 16px 16px 16px 0;
+}
+
+#close_button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 38px;
+}
+
+#mobile_overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(24, 1, 72, 1) 25%, rgba(0, 0, 0, 1) 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#mobile_overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 32px;
+  display: block;
+}
+
+#mobile_overlay ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20%;
+  gap: 30px;
+}
+
+/* ----------------------- Main ----------------------- */
+/* ------------ General ------------ */
+main {
+  min-height: calc(100vh - 97px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bg_video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+#background_darkener {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+article {
+  max-width: 80vw;
+  display: flex;
+}
+
+/* ------------ Frontpage ------------ */
+#logo_main {
+  margin-top: 250px;
+  max-width: 510px;
+  width: 90vw;
+  height: auto;
+}
+
+#mobile_nav_frontpage {
+  display: none;
+}
+
+/* ------------ Vi tilbyder ------------ */
+#offers article {
+  flex-direction: column;
+  margin-top: 120px;
+  gap: 150px;
+}
+
+#offers article section:first-of-type {
+  text-align: center;
+}
+
+#offers article section h1,
+#offers article section h2 {
+  margin-bottom: 30px;
+}
+
+#slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.slider_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  width: 20%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider_box p {
+  padding: 0 10px;
+}
+
+#offers article section span {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#offers article section:last-of-type {
+  text-align: center;
+}
+
+#offers article section ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ------------ Om os ------------ */
+#about_us {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 120px;
+  width: 650px;
+}
+
+#about_us span p {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* ------------ Priser ------------ */
+#prices h1 {
+  margin-top: 120px;
+  margin-bottom: 35px;
+}
+
+#prices article {
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-bottom: 24px;
+}
+
+#prices article section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 304px;
+  min-width: 200px;
+  height: 392px;
+  background-color: rgba(0, 0, 0, 60%);
+  padding: 0 5px;
+}
+
+#prices article section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#prices article section p {
+  text-align: center;
+}
+
+#prices article section span {
+  font-size: 24px;
+  font-weight: 900;
+  color: #8136B6;
+}
+
+#prices article section a {
+  width: 214px;
+  text-align: center;
+  background-color: rgba(100, 100, 100, 22%);
+  padding: 12.8px 0;
+  text-decoration: none;
+  margin-top: -21px;
+  font-size: 17px;
+}
+
+#price_info {
+  font-size: 18px;
+  font-weight: normal;
+  max-width: 80vw;
+  text-align: center;
+}
+
+#prices span {
+  font-size: 12px;
+}
+
+/* ------------ Kontakt ------------ */
+#contact {
+  margin-top: 120px;
+}
+
+#contact section h1 {
+  text-align: center;
+}
+
+#contact section div {
+  margin-top: 123px;
+}
+
+#contact p {
+  font-size: 20px;
+}
+
+#contact a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#contact span,
+#contact a {
+  display: flex;
+}
+
+#contact img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* ----------------------- Footer ----------------------- */
+footer {
+  display: flex;
+  margin-top: 80px;
+  padding-bottom: 10px;
+}
+
+#footer_container {
+  width: 100%;
+  display: flex;
+  padding-left: 30px;
+  gap: 71px;
+}
+
+#contact_info,
+#so_me {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer_title {
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+footer p,
+footer a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#contact_info span,
+#contact_info a {
+  display: flex;
+}
+
+#contact_info img {
+  width: 14px;
+  margin-right: 5px;
+}
+
+#so_me div {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#so_me div img {
+  height: auto;
+  width: 34px;
+}
+
+/* ----------------------- Media queries ----------------------- */
+@media screen and (max-width: 768px) {
+
+  /* ----------------------- Header ----------------------- */
+  header {
+    flex-direction: row-reverse;
+    position: fixed;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+  }
+
+  #desktop_header {
+    display: none;
+  }
+
+  #mobile_header {
+    display: flex;
+  }
+
+  /* ----------------------- Main ----------------------- */
+  main {
+    min-height: 90vh;
+    padding-top: 50px;
+  }
+
+  h1 {
+    font-size: clamp(22px, 5.5vw, 40px);
+  }
+
+  /* ------------ Frontpage ------------ */
+  #logo_main {
+    margin: 154px 0 96px 0;
+  }
+
+  #mobile_nav_frontpage {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  #mobile_nav_frontpage a {
+    text-decoration: none;
+    background-color: rgba(106, 106, 106, 31%);
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 313px;
+    width: 90vw;
+    padding: 10.5px 0;
+    text-align: center;
+  }
+
+  /* ------------ Vi tilbyder ------------ */
+  .slider_box {
+    width: 230px;
+    height: 130px;
+  }
+
+  /* ------------ Priser ------------ */
+  #prices article {
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  #prices article section {
+    min-width: 269px;
+  }
+
+  /* ------------ Kontakt ------------ */
+  #contact p {
+    font-size: clamp(15px, 3.5vw, 24px);
+  }
+
+  /* ----------------------- Footer ----------------------- */
+  footer {
+    flex-direction: column;
+  }
+
+  #footer_container {
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-left: 15px;
+  }
+}
